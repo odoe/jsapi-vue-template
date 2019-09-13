@@ -74,6 +74,6 @@
     "vue-router": "~3.0"
   },
   "arcgis": {
-    "type": "react"
+    "type": "vue"
   }
 }
