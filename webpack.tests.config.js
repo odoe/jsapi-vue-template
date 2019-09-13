@@ -7,7 +7,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     entry: {
-        init: './src/index.ts',
+        init: './src/index.tsx',
         tests: ['regenerator-runtime', '@dojo/framework/shim/Promise', './tests/main.ts'],
     },
 

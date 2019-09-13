@@ -9,7 +9,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_|^h' }],
     '@typescript-eslint/explicit-function-return-type': 0,
   },
 };

@@ -21,6 +21,8 @@
     "@vue/eslint-config-prettier": "^5.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "clean-webpack-plugin": "^3.0.0",
     "compression-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.3",
@@ -61,8 +63,8 @@
     "start": "webpack-dev-server --history-api-fallback --mode development --open",
     "build": "npm run lint && webpack --mode production",
     "serve": "webpack-dev-server --history-api-fallback --mode production --open --https --compress",
-    "prettier": "prettier --write \"src/**/*.ts?(x)\"",
-    "lint": "eslint --fix src/**/*.{ts,vue}",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx,vue}\"",
+    "lint": "eslint --fix src/**/*.{ts,tsx,vue}",
     "test": "webpack --config=webpack.tests.config.js --mode=development && intern"
   },
   "dependencies": {

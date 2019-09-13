@@ -21,7 +21,7 @@ module.exports = function(_, arg) {
         '@dojo/framework/shim/Promise',
         './src/css/main.scss',
         './src/worker-config.ts',
-        './src/index.ts',
+        './src/index.tsx',
       ],
     },
     output: {
@@ -55,7 +55,7 @@ module.exports = function(_, arg) {
           use: ['vue-loader', 'eslint-loader'],
         },
         {
-          test: /\.ts$/,
+          test: /\.tsx?$/,
           exclude: /node_modules/,
           use: ['babel-loader', 'eslint-loader'],
         },
