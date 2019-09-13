@@ -10,9 +10,9 @@ export default {
     props: {
         appTitle: {
             type: String,
-            default: 'Header',
-        },
-    },
+            default: 'Header'
+        }
+    }
 };
 </script>
 

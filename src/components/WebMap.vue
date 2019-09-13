@@ -8,7 +8,7 @@ export default {
     async mounted() {
         const app = await import('../data/map');
         app.initialize(this.$el);
-    },
+    }
 };
 </script>
 

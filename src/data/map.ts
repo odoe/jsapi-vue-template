@@ -7,13 +7,13 @@ import { webMapId } from '../config';
 
 export const webmap = new WebMap({
     portalItem: {
-        id: webMapId,
-    },
+        id: webMapId
+    }
 });
 
 export const view = new MapView({
     container: 'viewDiv',
-    map: webmap,
+    map: webmap
 });
 
 // add a legend widget instance to the view
@@ -22,10 +22,10 @@ export const view = new MapView({
 export const legend = new Expand({
     content: new Legend({
         view,
-        style: 'card',
+        style: 'card'
     }),
     view,
-    expanded: true,
+    expanded: true
 });
 view.ui.add(legend, 'bottom-left');
 

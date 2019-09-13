@@ -16,7 +16,7 @@ export default {
     components: { Header, WebMap },
     data: () => ({
         title,
-    }),
+    })
 };
 </script>
 
