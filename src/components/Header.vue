@@ -10,8 +10,7 @@ export default {
     props: {
         appTitle: {
             type: String,
-            default: '',
-            required: true,
+            default: 'Header',
         },
     },
 };
