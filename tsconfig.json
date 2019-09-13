@@ -1,8 +1,14 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "es2015.promise", "es5", "es6"],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
     "module": "esnext",
     "target": "esnext",
+    "jsx": "preserve",
     "noImplicitAny": true,
     "removeComments": true,
     "moduleResolution": "node",
@@ -21,12 +27,20 @@
     "importHelpers": true,
     "skipLibCheck": true
   },
+  "paths": {
+    "@/*": [
+      "src/*"
+    ]
+  },
   "types": [
     "arcgis-js-api",
     "moment"
   ],
   "include": [
-    "typings/*.d.ts",
-    "src/*"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
   ]
 }

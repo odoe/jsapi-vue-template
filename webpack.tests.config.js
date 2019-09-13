@@ -10,6 +10,7 @@ module.exports = {
         init: './src/index.ts',
         tests: ['regenerator-runtime', '@dojo/framework/shim/Promise', './tests/main.ts'],
     },
+
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './~tmp'),
@@ -90,6 +91,9 @@ module.exports = {
                     'esri-native-promise': true,
                 },
             },
+            options: {
+                loader: path.join(__dirname, "./public/loader/loader.js")
+            }
         }),
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({

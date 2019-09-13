@@ -4,31 +4,37 @@
     </header>
 </template>
 
-<script>
+<script lang="ts">
 export default {
     name: 'Header',
-    props: ['appTitle']
+    props: {
+        appTitle: {
+            type: String,
+            default: '',
+            required: true,
+        },
+    },
 };
 </script>
 
 <style lang="scss" scoped>
-    $blue: #0079c1;
-    $gray: #959595;
-    $white: #fff;
+$blue: #0079c1;
+$gray: #959595;
+$white: #fff;
 
-    header  {
-      background-color: $blue;
-      color: $white;
-      width: 100%;
-      height: 2rem;
-      line-height: 2rem;
-      position: relative;
-      font-weight: 400;
-      font-style: normal;
-      border-bottom: 1px solid $gray;
-      text-align: center;
-      span {
+header {
+    background-color: $blue;
+    color: $white;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 1px solid $gray;
+    text-align: center;
+    span {
         vertical-align: middle;
-      }
     }
+}
 </style>
